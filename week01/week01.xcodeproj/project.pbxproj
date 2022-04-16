@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B377BE5C2808536E0054AB6F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B377BE5B2808536E0054AB6F /* main.swift */; };
+		B3EF61F02809CCD000C10594 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF61EF2809CCD000C10594 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,14 @@
 
 /* Begin PBXFileReference section */
 		B377BE582808536E0054AB6F /* week01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = week01; sourceTree = BUILT_PRODUCTS_DIR; };
-		B377BE5B2808536E0054AB6F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B377BE5B2808536E0054AB6F /* hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello.swift; sourceTree = "<group>"; };
+		B377BE62280857580054AB6F /* func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = func.swift; sourceTree = "<group>"; };
+		B377BE64280859660054AB6F /* muYaHo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muYaHo.swift; sourceTree = "<group>"; };
+		B3EF61E828099A0900C10594 /* week01-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "week01-Bridging-Header.h"; sourceTree = "<group>"; };
+		B3EF61E928099A0900C10594 /* multiply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiply.swift; sourceTree = "<group>"; };
+		B3EF61EB2809C5AF00C10594 /* Spring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		B3EF61ED2809C9FC00C10594 /* jump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jump.swift; sourceTree = "<group>"; };
+		B3EF61EF2809CCD000C10594 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +64,14 @@
 		B377BE5A2808536E0054AB6F /* week01 */ = {
 			isa = PBXGroup;
 			children = (
-				B377BE5B2808536E0054AB6F /* main.swift */,
+				B377BE62280857580054AB6F /* func.swift */,
+				B377BE5B2808536E0054AB6F /* hello.swift */,
+				B377BE64280859660054AB6F /* muYaHo.swift */,
+				B3EF61E928099A0900C10594 /* multiply.swift */,
+				B3EF61E828099A0900C10594 /* week01-Bridging-Header.h */,
+				B3EF61EB2809C5AF00C10594 /* Spring.swift */,
+				B3EF61ED2809C9FC00C10594 /* jump.swift */,
+				B3EF61EF2809CCD000C10594 /* main.swift */,
 			);
 			path = week01;
 			sourceTree = "<group>";
@@ -94,6 +108,7 @@
 				TargetAttributes = {
 					B377BE572808536E0054AB6F = {
 						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -120,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B377BE5C2808536E0054AB6F /* main.swift in Sources */,
+				B3EF61F02809CCD000C10594 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,8 +260,16 @@
 		B377BE602808536E0054AB6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "week01/week01-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -254,8 +277,15 @@
 		B377BE612808536E0054AB6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "week01/week01-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
