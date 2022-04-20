@@ -14,9 +14,7 @@ func makePeperoBar(barLength: Int){
 }
 
 func makePeperoBody(body: String, topping: String)->String{
-    
     var PeperoBody: String = String()
-    
     if topping.isEmpty == true{
         PeperoBody += " "
     }else {
@@ -27,12 +25,12 @@ func makePeperoBody(body: String, topping: String)->String{
 }
 
 var bodyResult: String = String()
+
 func makePeperoLength(bodyLength: Int){
     for _ in 1...bodyLength/2{
         print(bodyResult)
     }
 }
-
 //빼빼로 출력 함수 (실행 예시 1~4, 나만의 배빼로)
 func makePepero_1(){
     bodyResult = makePeperoBody(body: "***", topping: "")
@@ -40,24 +38,28 @@ func makePepero_1(){
     makePeperoBar(barLength: 4)
     print("")
 }
+
 func makePepero_2(){
     bodyResult = makePeperoBody(body: "***", topping: "&")
     makePeperoLength(bodyLength: 12)
     makePeperoBar(barLength: 4)
     print("")
 }
+
 func makePepero_3(){
     bodyResult = makePeperoBody(body: "***", topping: "#")
     makePeperoLength(bodyLength: 12)
     makePeperoBar(barLength: 6)
     print("")
 }
+
 func makePepero_4(){
     bodyResult = makePeperoBody(body: "|0|", topping: "")
     makePeperoLength(bodyLength: 6)
     makePeperoBar(barLength: 4)
     print("")
 }
+
 func makeMyPepero(){
     bodyResult = makePeperoBody(body: "|0|", topping: "*")
     makePeperoLength(bodyLength: 8)
