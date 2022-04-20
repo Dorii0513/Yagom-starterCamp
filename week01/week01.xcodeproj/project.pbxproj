@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3EF61F02809CCD000C10594 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF61EF2809CCD000C10594 /* main.swift */; };
+		B3EF61F7280DB8F600C10594 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF61F6280DB8F600C10594 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +31,10 @@
 		B3EF61E928099A0900C10594 /* multiply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiply.swift; sourceTree = "<group>"; };
 		B3EF61EB2809C5AF00C10594 /* Spring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
 		B3EF61ED2809C9FC00C10594 /* jump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jump.swift; sourceTree = "<group>"; };
-		B3EF61EF2809CCD000C10594 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B3EF61EF2809CCD000C10594 /* icecream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecream.swift; sourceTree = "<group>"; };
+		B3EF61F1280C3A7900C10594 /* 01_dataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 01_dataType.swift; sourceTree = "<group>"; };
+		B3EF61F3280C415500C10594 /* 02_dataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 02_dataType.swift; sourceTree = "<group>"; };
+		B3EF61F6280DB8F600C10594 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +74,10 @@
 				B3EF61E828099A0900C10594 /* week01-Bridging-Header.h */,
 				B3EF61EB2809C5AF00C10594 /* Spring.swift */,
 				B3EF61ED2809C9FC00C10594 /* jump.swift */,
-				B3EF61EF2809CCD000C10594 /* main.swift */,
+				B3EF61EF2809CCD000C10594 /* icecream.swift */,
+				B3EF61F1280C3A7900C10594 /* 01_dataType.swift */,
+				B3EF61F3280C415500C10594 /* 02_dataType.swift */,
+				B3EF61F6280DB8F600C10594 /* main.swift */,
 			);
 			path = week01;
 			sourceTree = "<group>";
@@ -135,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EF61F02809CCD000C10594 /* main.swift in Sources */,
+				B3EF61F7280DB8F600C10594 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
