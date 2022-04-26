@@ -2,59 +2,31 @@
 //  main.swift
 //  week02
 //
-//  Created by 김예림 on 2022/04/24.
+//  Created by 김예림 on 2022/04/25.
 //
 
 import Foundation
-
 /*
- optional : 값이 있을 수도, 없을 수도 있음
- optional이 필요한 이유 nil의 가능성을 명시적으로 표현.
- - nil 가능성을 문서화 하지 않고 코드만으로도 충분히 표현 가능하기 때문에
- 문서 / 주석 작성 시간을 절약해줌
- - 전달받은 값이 옵셔널이 아니라면 nil 체크를 하지 않더라도 안심하고 사용 가능하기 때문에
- 효율적인 코딩, 예외상황을 최소화하는 안전한 코딩이 가능함
- 
- 옵셔널이 아닌 타입은 nil이 들어갈 수 없음
- 
- 옵셔널은 열거형과 제네럴의 합작으로 볼 수 있음.
- let optionalVallue: Int? = nil
- */
+var someDictionary: [String?: String] = [:]
+let day: Int = day(of: today)
 
- //옵셔널 표현
-
- // MARK: - ! : 암시적 추출 옵셔널
-var optionalValue1: Int! = 100
-//switch구문으로 값이 있는지 없는지 확인 가능
-switch optionalValue1 {
-case .none:
-    print("This Optional variable is nil")
-case .some(let value):
-    print("Value is \(value)")
+if day == 1 || day == 30 {
+    someDictionary["날씨"] = "맑음"
+} else {
+    someDictionary["풍향"] = "남풍동"
 }
-//기존 변수처럼 사용 가능
-optionalValue1 = optionalValue1 + 1
-// nil 할당 가능
-optionalValue1 = nil
-// 잘못된 접근으로 인한 런타임 오류 발생 :
-// 위의 변수에서 nil 값을 넣어줬는데 +1을 해주어 오류가 발생한 것
-// optionalValue1 = optionalValue + 1
+*/
 
-// MARK: - ? : 일반적인 옵셔널
-var optionalValue2: Int? = 100
-//switch구문으로 값이 있는지 없는지 확인 가능
-switch optionalValue2 {
-case .none:
-    print("This Optional variable is nil")
-case .some(let value):
-    print("Value is \(value)")
+var numbers: [Int?] = [0, 1, nil, 2, 5]
+numbers.append(nil)
+
+let someArray: [[[Int?]?]?] = [[[1, 2], nil, [3, nil, 4], nil, [5, 6]]]
+
+func printName(_ num: String) {
+    print(num)
 }
-//nill 할당 가능
-optionalValue2 = nil
-// 기존 변수처럼 사용 불가 : 옵셔널과 일반 값은 다른 타입이므로 연산 불가
-//optionalValue2 = optionalValue2 + 1
-
-// MARK: - 옵셔널 추출 : 바인딩
-// 옵셔널 값을 꺼내오는 방법 중 하나
-// nil체크 + 안전한 값 추출
-
+if let num: [[[Int?]?]?] = someArray {
+    print()
+    } else {
+            
+        }
