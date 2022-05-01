@@ -22,11 +22,6 @@ numbers.append(nil)
 
 let someArray: [[[Int?]?]?] = [[[1, 2], nil, [3, nil, 4], nil, [5, 6]]]
 
-func printName(_ num: String) {
-    print(num)
-}
-if let num: [[[Int?]?]?] = someArray {
-    print()
-    } else {
-            
-        }
+if let num1 = someArray[0], let num2 = num1[2], let num3 = num2[0] {
+    print(num3)
+    }
