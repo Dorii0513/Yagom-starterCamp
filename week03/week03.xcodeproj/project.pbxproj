@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3ECE4E4281D8CF5002262E7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ECE4E3281D8CF5002262E7 /* main.swift */; };
+		B3ECE4E628202AB4002262E7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ECE4E528202AB4002262E7 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,8 @@
 		B33B014328182A3B006EF392 /* _ type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_ type.swift"; sourceTree = "<group>"; };
 		B33B014A28183598006EF392 /* week03-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "week03-Bridging-Header.h"; sourceTree = "<group>"; };
 		B33B014B28183599006EF392 /* _  instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_  instance.swift"; sourceTree = "<group>"; };
-		B3ECE4E3281D8CF5002262E7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B3ECE4E3281D8CF5002262E7 /* _ class_struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_ class_struct.swift"; sourceTree = "<group>"; };
+		B3ECE4E528202AB4002262E7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +65,8 @@
 				B33B014328182A3B006EF392 /* _ type.swift */,
 				B33B014B28183599006EF392 /* _  instance.swift */,
 				B32D3737281C13A500F3A330 /* _instance2.swift */,
-				B3ECE4E3281D8CF5002262E7 /* main.swift */,
+				B3ECE4E3281D8CF5002262E7 /* _ class_struct.swift */,
+				B3ECE4E528202AB4002262E7 /* main.swift */,
 				B33B014A28183598006EF392 /* week03-Bridging-Header.h */,
 			);
 			path = week03;
@@ -129,7 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3ECE4E4281D8CF5002262E7 /* main.swift in Sources */,
+				B3ECE4E628202AB4002262E7 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

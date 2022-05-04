@@ -2,63 +2,51 @@
 //  main.swift
 //  week03
 //
-//  Created by 김예림 on 2022/05/01.
+//  Created by 김예림 on 2022/05/03.
 //
 
 import Foundation
 
+//lazy 키워드를 앞에 붙여서 저장하면 프로퍼티가 처음 사용되는 시점에 초기화가 됨.
+struct Yagom {
+    var name: String = "야굠"
+    var age: Int = 20
+    lazy var nickName: String = "천재" + self.name
+}
 
-class PersonA {
-    var name: String
-    var age: Int
-    
-    init(name: String, age: Int) {
-        self.name = name
-        self.age = age
+var yagom = Yagom()
+yagom.name = "야한곰"
+
+print(yagom.nickName)
+
+// 연산 프로퍼티
+struct PersonC {
+    var koreanAge: Int
+    var americanAge: Int {
+        get {
+            return koreanAge - 1
+        }
+        set(newValue) {
+            koreanAge = newValue; +1
+        }
     }
-    
-    func addOneToAge() {
-        self.age += 1
+}
+
+//프로퍼티 감시자
+struct PersonD {
+    var name: String {
+        willSet {
+            // some code
+        }
+        didSet {
+            // some code
+        }
     }
 }
 
-struct PersonB {
-    var name: String
-    var age: Int
-    
-    mutating func addOneToAge() {
-        self.age += 1
-    }
+//타입 프로퍼티
+struct SomeStructure {
+    static var someProperty: Int = 10
 }
 
-// 값타입 참조타입
-class CameraA {
-    var color = "Black"
-}
-
-struct CameraB {
-    var color = "Black"
-}
-
-func printCameraColor() {
-    let str = """
-Camera A (my: \(myCameraA.color), yours: \(yourCameraA.color))
-Camera B (my: \(myCameraB.color), yours: \(yourCameraB.color))
-"""
-    print(str)
-}
-
-var myCameraA = CameraA()
-var yourCameraA = myCameraA
-
-var myCameraB = CameraB()
-var yourCameraB = myCameraB
-
-printCameraColor()
-
-print("----- myCamera 색을 변경합니다. -----")
-
-myCameraA.color = "White"
-myCameraB.color = "White"
-
-printCameraColor()
+let number = SomeStructure.someProperty
