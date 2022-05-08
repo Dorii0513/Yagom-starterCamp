@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3F59C3D28256818003308B9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F59C3C28256818003308B9 /* main.swift */; };
+		B3F59C3F2826ACC0003308B9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F59C3E2826ACC0003308B9 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +31,8 @@
 		B3ECE4E3281D8CF5002262E7 /* _ class_struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_ class_struct.swift"; sourceTree = "<group>"; };
 		B3ECE4E528202AB4002262E7 /* _ proprety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_ proprety.swift"; sourceTree = "<group>"; };
 		B3F59C3A282555BA003308B9 /* _inherit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _inherit.swift; sourceTree = "<group>"; };
-		B3F59C3C28256818003308B9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B3F59C3C28256818003308B9 /* _ optional2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_ optional2.swift"; sourceTree = "<group>"; };
+		B3F59C3E2826ACC0003308B9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +71,8 @@
 				B3ECE4E3281D8CF5002262E7 /* _ class_struct.swift */,
 				B3ECE4E528202AB4002262E7 /* _ proprety.swift */,
 				B3F59C3A282555BA003308B9 /* _inherit.swift */,
-				B3F59C3C28256818003308B9 /* main.swift */,
+				B3F59C3C28256818003308B9 /* _ optional2.swift */,
+				B3F59C3E2826ACC0003308B9 /* main.swift */,
 				B33B014A28183598006EF392 /* week03-Bridging-Header.h */,
 			);
 			path = week03;
@@ -135,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3F59C3D28256818003308B9 /* main.swift in Sources */,
+				B3F59C3F2826ACC0003308B9 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
