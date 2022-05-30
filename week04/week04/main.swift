@@ -13,3 +13,9 @@ let sum: (Int, Int) -> Int = {(a: Int, b: Int) in
 
 let sumResult: Int = sum(1, 2)
 print(sumResult)
+
+// 궁금한 점 : 
+let add: (Int, Int) -> Int
+add = { (a: Int, b: Int) in
+    return a - b
+}
